@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaushil Ruparelia - Resume</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif; /* Reverted to Inter font */
+        background-color: #f3f4f6; /* Light gray background */
+      }
+      /* Custom styles for resume sections for better visual separation and rounded corners */
+      .resume-section {
+        background-color: #ffffff; /* White background for sections */
+        border-radius: 0.75rem; /* Rounded corners */
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+        padding: 1.5rem; /* Reduced padding */
+        margin-bottom: 1rem; /* Reduced space between sections */
+      }
+      .section-title {
+        font-weight: 700; /* Bold */
+        color: #1f2937; /* Dark gray */
+        margin-bottom: 1rem; /* Reduced space below title */
+        border-bottom: 2px solid #e5e7eb; /* Subtle line under title */
+        padding-bottom: 0.5rem; /* Reduced padding below title */
+      }
+      .experience-item {
+        margin-bottom: 1rem; /* Reduced space between experience items */
+        padding-bottom: 1rem; /* Reduced padding below experience items */
+        border-bottom: 1px dashed #e5e7eb; /* Dashed line for subtle separation */
+      }
+      .experience-item:last-child {
+        border-bottom: none; /* No border for the last item */
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .experience-role {
+        font-weight: 600; /* Semi-bold */
+        color: #1f2937;
+      }
+      .experience-company {
+        font-weight: 500;
+        color: #4b5563;
+      }
+      .experience-date {
+        color: #6b7280;
+        margin-top: 0.2rem; /* Slightly reduced margin */
+      }
+      .experience-description ul {
+        list-style-type: disc; /* Bullet points for descriptions */
+        margin-left: 1.25rem; /* Slightly reduced indent */
+        margin-top: 0.5rem; /* Reduced margin */
+        color: #374151;
+      }
+      .experience-description li {
+        margin-bottom: 0.3rem; /* Reduced space between list items */
+        line-height: 1.4; /* Slightly tighter line height */
+      }
+      .skill-tag {
+        background-color: #e0f2fe; /* Light blue background for skills */
+        color: #0c4a6e; /* Darker blue text */
+        padding: 0.3rem 0.6rem; /* Reduced padding */
+        border-radius: 0.5rem; /* More rounded corners for tags */
+        font-weight: 500;
+        margin-right: 0.5rem; /* Reduced margin */
+        margin-bottom: 0.5rem; /* Reduced margin */
+        display: inline-block; /* Allows wrapping */
+      }
+      .achievement-item {
+        margin-bottom: 0.5rem; /* Reduced margin */
+        color: #374151;
+        line-height: 1.4; /* Slightly tighter line height */
+      }
+      .education-item,
+      .certification-item {
+        margin-bottom: 0.75rem; /* Reduced margin */
+        color: #374151;
+      }
+      .education-degree,
+      .certification-name {
+        font-weight: 600;
+        color: #1f2937;
+      }
+      .education-school,
+      .certification-org {
+        color: #4b5563;
+      }
+      .education-date {
+        color: #6b7280;
+        margin-top: 0.2rem; /* Slightly reduced margin */
+      }
+    </style>
+  </head>
+  <body class="antialiased text-gray-800">
+    <div class="container mx-auto px-4 py-6 sm:px-6 lg:px-8 max-w-4xl">
+      <!-- Reduced overall vertical padding -->
+
+      <!-- Header - Contact Information -->
+      <header class="resume-section text-center">
+        <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-900 mb-2">
+          Kaushil Ruparelia
+        </h1>
+        <p class="text-lg text-gray-600 mb-3">
+          <!-- Reduced margin -->
+          Clifton, NJ •
+          <a href="tel:+12012341932" class="text-blue-600 hover:underline"
+            >(201) 234-1932</a
+          >
+          •
+          <a
+            href="mailto:kaushil111@yahoo.com"
+            class="text-blue-600 hover:underline"
+            >kaushil111@yahoo.com</a
+          >
+        </p>
+        <div
+          class="flex flex-wrap justify-center gap-x-3 text-lg text-blue-600"
+        >
+          <!-- Reduced gap -->
+          <a
+            href="https://linkedin.com/in/kaushil"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:underline"
+            >linkedin.com/in/kaushil</a
+          >
+          <a
+            href="https://github.com/kaushil111"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:underline"
+            >github.com/kaushil111</a
+          >
+        </div>
+      </header>
+
+      <!-- Executive Summary -->
+      <section class="resume-section">
+        <h2 class="section-title text-3xl">EXECUTIVE SUMMARY</h2>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          Engineering Manager & Mobile Engineer with over 10 years of experience
+          driving award-winning consumer mobile products. Led the architecture,
+          launch, and scale of Paperless Post’s iOS and Android platforms,
+          resulting in 4x revenue growth and 99.9%+ crash-free sessions. Proven
+          expertise in building high-performing cross-functional teams,
+          modernizing mobile architectures, and solving critical infrastructure
+          challenges in production.
+        </p>
+      </section>
+
+      <!-- Experience -->
+      <section class="resume-section">
+        <h2 class="section-title text-3xl">EXPERIENCE</h2>
+
+        <!-- Paperless Post -->
+        <div class="experience-item">
+          <div class="flex justify-between items-start flex-wrap">
+            <div>
+              <h3 class="experience-role text-xl">
+                Engineering Manager, Native Platform
+              </h3>
+              <p class="experience-company text-lg">
+                Paperless Post — New York, NY
+              </p>
+            </div>
+            <p class="experience-date text-base text-right sm:text-left">
+              Nov 2022 – Present
+            </p>
+          </div>
+          <div class="experience-description">
+            <ul class="text-base">
+              <li>
+                Leading Paperless Post’s AI adoption initiative, identifying
+                daily-use engineering pain points, recommending improvements,
+                and promoting practical, high-quality use of AI tools and
+                agentic workflows.
+              </li>
+              <li>
+                Organizing internal knowledge-sharing sessions to accelerate AI
+                skills growth across the engineering org.
+              </li>
+              <li>
+                Drove platform stability initiatives that pushed crash-free
+                sessions to >99.9% and crash-free users to >99.8%.
+              </li>
+              <li>
+                Led the Core-to-React Native migration, replacing a legacy
+                Objective-C native codebase (built since 2012) with a modern
+                architecture and delivering the entire Cards product in React
+                Native.
+              </li>
+              <li>
+                Partnered with product, design, and engineering leadership to
+                define quarterly and long-term technical priorities for the
+                native stack and broader engineering org.
+              </li>
+              <li>
+                Co-led efforts that contributed to 4x revenue growth through
+                monetization optimization, funnel improvements, and platform
+                polish.
+              </li>
+              <li>
+                Championed Android delivery quality and performance, increasing
+                Play Store rating and stability.
+              </li>
+              <li>
+                Implemented team-wide planning, review, and QA processes that
+                enabled predictable delivery of critical roadmap items.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="flex justify-between items-start flex-wrap">
+            <div>
+              <h3 class="experience-role text-xl">Senior Software Engineer</h3>
+              <p class="experience-company text-lg">
+                Paperless Post — New York, NY
+              </p>
+            </div>
+            <p class="experience-date text-base text-right sm:text-left">
+              Jan 2021 – Oct 2022
+            </p>
+          </div>
+          <div class="experience-description">
+            <ul class="text-base">
+              <li>
+                Introduced CodePush-based OTA updates, improving feature rollout
+                velocity while maintaining platform safety.
+              </li>
+              <li>
+                Delivered infrastructure to support guest tagging, JS-based
+                feature flagging, and deep linking for RSVP flows and
+                post-invite actions.
+              </li>
+              <li>
+                Took technical ownership of large product surface areas like
+                send/manage, browse flows, and native navigation.
+              </li>
+              <li>
+                Mentored junior engineers and led cross-functional planning
+                across Native, Core, and backend teams.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="flex justify-between items-start flex-wrap">
+            <div>
+              <h3 class="experience-role text-xl">Software Engineer</h3>
+              <p class="experience-company text-lg">
+                Paperless Post — New York, NY
+              </p>
+            </div>
+            <p class="experience-date text-base text-right sm:text-left">
+              Oct 2018 – Dec 2020
+            </p>
+          </div>
+          <div class="experience-description">
+            <ul class="text-base">
+              <li>
+                Played a key role in launching the first Paperless Post Android
+                app (2021), leading critical feature development and parity
+                efforts.
+              </li>
+              <li>
+                Contributed to the development of the Flyer product and built
+                native bridging infrastructure in Swift and Objective-C.
+              </li>
+              <li>
+                Helped drive early adoption of React Native at scale through
+                evaluation, experimentation, and platform readiness.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Yogi Divine Society of NJ (Volunteer) -->
+        <div class="experience-item">
+          <div class="flex justify-between items-start flex-wrap">
+            <div>
+              <h3 class="experience-role text-xl">
+                Lead Mobile Developer
+                <span class="text-gray-500">(Volunteer)</span>
+              </h3>
+              <p class="experience-company text-lg">
+                Yogi Divine Society of NJ
+              </p>
+            </div>
+            <p class="experience-date text-base text-right sm:text-left">
+              2015 – Present
+            </p>
+          </div>
+          <div class="experience-description">
+            <ul class="text-base">
+              <li>
+                Built and maintain 4 production React Native apps including
+                Sambandh, owning ~75% of the codebase.
+              </li>
+              <li>
+                Delivered features including event management, donation flows,
+                media sharing, albums, and deep-linked notifications.
+              </li>
+              <li>
+                Migrated OTA delivery from CodePush to Hot-Updater for full
+                compliance with new architecture.
+              </li>
+              <li>
+                Built and maintained monorepo with custom Metro/Babel configs;
+                handled Firebase/Google Sign-In infra challenges.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- NYC Department of IT & Telecommunications -->
+        <div class="experience-item">
+          <div class="flex justify-between items-start flex-wrap">
+            <div>
+              <h3 class="experience-role text-xl">iOS Developer</h3>
+              <p class="experience-company text-lg">
+                NYC Department of IT & Telecommunications — New York, NY
+              </p>
+            </div>
+            <p class="experience-date text-base text-right sm:text-left">
+              Jan 2018 – Oct 2018
+            </p>
+          </div>
+          <div class="experience-description">
+            <ul class="text-base">
+              <li>
+                Modernized the Notify NYC app’s UI and delivery pipeline;
+                implemented CI/CD with GitHub and TeamCity.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bloomberg LP -->
+        <div class="experience-item">
+          <div class="flex justify-between items-start flex-wrap">
+            <div>
+              <h3 class="experience-role text-xl">iOS UX Prototyping Intern</h3>
+              <p class="experience-company text-lg">
+                Bloomberg LP — New York, NY
+              </p>
+            </div>
+            <p class="experience-date text-base text-right sm:text-left">
+              Jun 2017 – Aug 2017
+            </p>
+          </div>
+          <div class="experience-description">
+            <ul class="text-base">
+              <li>
+                Developed onboarding UX prototypes for Bloomberg Professional
+                mobile app; partnered with UX/design team on rapid iteration.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- HDFC RED, Sampark YDS, Neebal Technologies -->
+        <div class="experience-item">
+          <div class="flex justify-between items-start flex-wrap">
+            <div>
+              <h3 class="experience-role text-xl">iOS Developer</h3>
+              <p class="experience-company text-lg">
+                HDFC RED, Sampark YDS, Neebal Technologies — India
+              </p>
+            </div>
+            <p class="experience-date text-base text-right sm:text-left">
+              2014 – 2016
+            </p>
+          </div>
+          <div class="experience-description">
+            <ul class="text-base">
+              <li>
+                Delivered consumer-facing apps with gamification, geolocation,
+                and OpenCV-based personalization.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Product Achievements -->
+      <section class="resume-section">
+        <h2 class="section-title text-3xl">KEY PRODUCT ACHIEVEMENTS</h2>
+        <ul class="list-disc ml-6 text-base text-gray-700">
+          <li class="achievement-item">
+            <strong>99.9%+ Crash-Free Sessions:</strong> Led platform stability
+            across iOS and Android.
+          </li>
+          <li class="achievement-item">
+            <strong>4x Revenue Growth:</strong> Co-led monetization and mobile
+            funnel optimization.
+          </li>
+          <li class="achievement-item">
+            <strong>Android Launch (2021):</strong> Delivered Paperless Post’s
+            first Android app.
+          </li>
+          <li class="achievement-item">
+            <strong>Core Platform Migration:</strong> Migrated Cards and Flyer
+            from legacy systems to the newly architected solutions for the
+            native team.
+          </li>
+          <li class="achievement-item">
+            <strong>App of the Day:</strong> Featured by Apple; praised by
+            Vogue, NYT, Fast Company.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Technical Skills -->
+      <section class="resume-section">
+        <h2 class="section-title text-3xl">TECHNICAL SKILLS</h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-tag text-sm">React Native</span>
+          <span class="skill-tag text-sm">TypeScript</span>
+          <span class="skill-tag text-sm">JavaScript</span>
+          <span class="skill-tag text-sm">iOS (Swift, Objective-C)</span>
+          <span class="skill-tag text-sm">Android (Java, Kotlin)</span>
+          <span class="skill-tag text-sm">Firebase</span>
+          <span class="skill-tag text-sm">GraphQL</span>
+          <span class="skill-tag text-sm">Hermes</span>
+          <span class="skill-tag text-sm">Detox</span>
+          <span class="skill-tag text-sm">GitHub Actions</span>
+          <span class="skill-tag text-sm">Fastlane</span>
+          <span class="skill-tag text-sm">Yarn Workspaces</span>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="resume-section">
+        <h2 class="section-title text-3xl">EDUCATION</h2>
+        <div class="education-item">
+          <h3 class="education-degree text-lg">M.S. in Computer Science</h3>
+          <p class="education-school text-base">
+            New Jersey Institute of Technology
+          </p>
+          <p class="education-date text-sm">2016 – 2017</p>
+        </div>
+        <div class="education-item">
+          <h3 class="education-degree text-lg">
+            B.E. in Electronics and Telecommunications
+          </h3>
+          <p class="education-school text-base">University of Mumbai</p>
+          <p class="education-date text-sm">2010 – 2014</p>
+        </div>
+      </section>
+
+      <!-- Certifications & Honors -->
+      <section class="resume-section">
+        <h2 class="section-title text-3xl">CERTIFICATIONS & HONORS</h2>
+        <ul class="list-disc ml-6 text-base text-gray-700">
+          <li class="certification-item">
+            Oracle Certified Java SE 8 Programmer
+          </li>
+          <li class="certification-item">App of the Week – HDFC RED</li>
+          <li class="certification-item">Hall of Fame Award (Internal)</li>
+          <li class="certification-item">
+            Featured in Vogue, NYT, Fast Company, Apple App Store
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
